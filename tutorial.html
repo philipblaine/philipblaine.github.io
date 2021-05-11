@@ -39,10 +39,11 @@
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Large-Scale Ocean Construction</h3>
     <p>I followed Dylan Neill's ocean tutorial on YouTube closely to produce the ocean in my scenes.
-       I will not re-state his steps, but begin my tutorial assuming an ocean constructed from his tutorial.
+       I will not re-state his steps, but begin my tutorial assuming an ocean constructed with his
+       techniques.
 
        Changes to ocean preview bake:
-       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/ocean_preview_bake.PNG" class="w3-image" style="width:30%">
            </div>
@@ -53,7 +54,7 @@
        with 30fps, 450 frames for a quicker render. <br />
        2. Re-bake your ocean preview. Unless you're happy with Neill's bake settings, you'll have to
        specify a new cache and re-bake your ocean preview with the correct number of frames.<br />
-       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/ocean_preview_keyframe.PNG" class="w3-image" style="width:30%">
            </div>
@@ -64,26 +65,26 @@
 
 
        Changes to ocean/background:<br />
-       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/world_shader.PNG" class="w3-image" style="width:90%">
            </div>
          </a> <!-- end link -->
          </div>
-         <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+         <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/world_shader_background.PNG" class="w3-image" style="width:30%">
            </div>
          </a> <!-- end link -->
          </div>
          1. Experiment with background strengths until you find something you like. For me, this was 0.800.<br />
-         <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+         <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/object_shader_ocean.PNG" class="w3-image" style="width:90%">
            </div>
          </a> <!-- end link -->
          </div>
-         <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+         <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/object_shader_ocean_settings.PNG" class="w3-image" style="width:30%">
            </div>
@@ -106,7 +107,7 @@
        Creating your landmass:<br />
        1. Create a mesh plane. Click on the scene in Object Mode and using shift+a create a mesh plane in
        its own Collection.<br />
-       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/scale.PNG" class="w3-image" style="width:30%">
            </div>
@@ -114,7 +115,7 @@
          </div>
        2. Scale your plane to fit the ocean in Object Properties. For me this was ~50x for X, Y, Z. Make sure that whatever
        scale you decide on is the same for X, Y, Z to eliminate distortion.<br />
-       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/plane_subdivide_modifier.PNG" class="w3-image" style="width:30%">
            </div>
@@ -122,14 +123,14 @@
          </div>
        3. Add a "Generate - Subdivision Surface" modifier to your plane. I use simple with viewport and render
        levels of 11. <br />
-        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
             <div class="w3-display-container" >
               <img src="images/plane_displace.PNG" class="w3-image" style="width:30%">
             </div>
           </a> <!-- end link -->
           </div>
     4. Add a "Deform - Displace" modifier to your plane. Select "New" to add a new texture.<br />
-          <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+          <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
               <div class="w3-display-container" >
                 <img src="images/plane_texture.PNG" class="w3-image" style="width:30%">
               </div>
@@ -137,14 +138,14 @@
             </div>
      5. Select "Open" and navigate to whatever DEM you may be using. This DEM should be scaled
      with values from ~0-65,000 to maximize quality in Blender.<br />
-            <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
                 <div class="w3-display-container" >
                   <img src="images/first_mk.PNG" class="w3-image" style="width:60%">
                 </div>
               </a> <!-- end link -->
               </div>
               This is what my plane looks like now. This is not great, but it's easy to get it looking better.<br />
-              <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+              <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
                   <div class="w3-display-container" >
                     <img src="images/plane_modifiers.PNG" class="w3-image" style="width:30%">
                   </div>
@@ -155,7 +156,7 @@
         too exaggerated, so I used 0.4. Change your coordinates to UV.<br />
         This is looking pretty good! We have a rough hillshade of our landmass floating on the water.
         My DEM contains bathymetry data, so I would like to submerge some of my landmass under the water.<br />
-                <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+                <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
                     <div class="w3-display-container" >
                       <img src="images/plane_object_properties.PNG" class="w3-image" style="width:30%">
                     </div>
@@ -165,7 +166,7 @@
         part of your landmass. This techique can also be used to create fantasy landmasses!
         Now we might want to add an image texture to our plane. It looks neat now but we could do with
         some imagery. I'm using aerial imagery from Bing Maps, but any image file can be used.<br />
-        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
             <div class="w3-display-container" >
               <img src="images/plane_material_properties.PNG" class="w3-image" style="width:30%">
             </div>
@@ -175,7 +176,7 @@
         base color and choose "Image Texture". Navigate to your image file that you'd like overlayed
         on your plane. For me this is closeupaerial.tif. Adjust the rest of the Principles BSDF settings
         to your liking.<br />
-        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
             <div class="w3-display-container" >
               <img src="images/colored_mk.PNG" class="w3-image" style="width:60%">
             </div>
