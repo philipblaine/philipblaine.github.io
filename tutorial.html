@@ -91,7 +91,7 @@
          </div>
          2. Change the source of baked frames in the ocean object shader editor. Choose the cache where
          you stored your new baked ocean preview. Also change the number of frames to match your
-         animation.<br />
+         animation.
 
 
     </p>
@@ -114,6 +114,77 @@
          </div>
        2. Scale your plane to fit the ocean in Object Properties. For me this was ~50x for X, Y, Z. Make sure that whatever
        scale you decide on is the same for X, Y, Z to eliminate distortion.<br />
+       <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+           <div class="w3-display-container" >
+             <img src="images/plane_subdivide_modifier.PNG" class="w3-image" style="width:30%">
+           </div>
+         </a> <!-- end link -->
+         </div>
+       3. Add a "Generate - Subdivision Surface" modifier to your plane. I use simple with viewport and render
+       levels of 11. <br />
+        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-display-container" >
+              <img src="images/plane_displace.PNG" class="w3-image" style="width:30%">
+            </div>
+          </a> <!-- end link -->
+          </div>
+    4. Add a "Deform - Displace" modifier to your plane. Select "New" to add a new texture.<br />
+          <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+              <div class="w3-display-container" >
+                <img src="images/plane_texture.PNG" class="w3-image" style="width:30%">
+              </div>
+            </a> <!-- end link -->
+            </div>
+     5. Select "Open" and navigate to whatever DEM you may be using. This DEM should be scaled
+     with values from ~0-65,000 to maximize quality in Blender.<br />
+            <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+                <div class="w3-display-container" >
+                  <img src="images/first_mk.PNG" class="w3-image" style="width:30%">
+                </div>
+              </a> <!-- end link -->
+              </div>
+              This is what my plane looks like now. This is not great, but it's easy to get it looking better.<br />
+              <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+                  <div class="w3-display-container" >
+                    <img src="images/plane_modifiers.PNG" class="w3-image" style="width:30%">
+                  </div>
+                </a> <!-- end link -->
+                </div>
+        6. Navigate back to your plane modifiers and look at your Displace. Change Midlevel to 0.
+        Change strength to whatever looks best for your project, for me the original strength was
+        too exaggerated, so I used 0.4. Change your coordinates to UV.<br />
+        This is looking pretty good! We have a rough hillshade of our landmass floating on the water.
+        My DEM contains bathymetry data, so I would like to submerge some of my landmass under the water.<br />
+                <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+                    <div class="w3-display-container" >
+                      <img src="images/plane_object_properties.PNG" class="w3-image" style="width:30%">
+                    </div>
+                  </a> <!-- end link -->
+                  </div>
+        7. Navigate to your plane's Object Properties. Toggle with the Z location in order to submerge
+        part of your landmass. This techique can also be used to create fantasy landmasses!<br />
+        Now we might want to add an image texture to our plane. It looks neat now but we could do with
+        some imagery. I'm using aerial imagery from Bing Maps, but any image file can be used.
+        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-display-container" >
+              <img src="images/plane_material_properties.PNG" class="w3-image" style="width:30%">
+            </div>
+          </a> <!-- end link -->
+          </div>
+        8. Navigate to your plane's Material Properties. Change the surface to Principled BSDF. Select the
+        base color and choose "Image Texture". Navigate to your image file that you'd like overlayed
+        on your plane. For me this is closeupaerial.tif. Adjust the rest of the Principles BSDF settings
+        to your liking.
+        <div class="w3-col l12 m12 w3-margin-bottom" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-display-container" >
+              <img src="images/colored_mk.PNG" class="w3-image" style="width:30%">
+            </div>
+          </a> <!-- end link -->
+          </div>
+        This is what I have now! This looks awesome. We have real aerial imagery overlayes on a plane
+        displaced by DEM data. This is the landmass we'll use for the two animations I've included here!
+
+
 
 
 
