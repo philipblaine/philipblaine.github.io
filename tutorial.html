@@ -305,7 +305,7 @@
        1. Choose a starting position for your camera. To do this more easily, you can click on the camera
        object, and then press n. This should open a menu. Select "View" from that menu and choose
        "Lock Camera to View". This way you can pan and scroll around the scene as usual and the camera will
-       follow you. If you're creating a fly-by scene you might want  
+       follow you. If you're creating a fly-by scene you might want
        to choose a position where you can see the entire landmass. <br />
        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
@@ -316,16 +316,25 @@
        2. Navigate to the first frame in your animation.<br />
        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
-             <img src="images/world_camera_rotation.PNG" class="w3-image" style="width:30%">
+             <img src="images/cam_keyframe.jpg" class="w3-image" style="width:30%">
            </div>
          </a> <!-- end link -->
          </div>
-       3. Navigate to the world shader editor. If you followed Neill's tutorial, here should be your
-       environment texture settings. Within the Mapping node, we'll beggin to keyframe the texture's
-       rotations. This texture is the light in the scene and acts as the sun rising and setting. This
-       is simulated using the Y rotation setting. To simulate a rising sun, set the Y rotation to -15.
-       Then, with your cursor hovered over the value "-15", press i. This will add a keyframe to
-       your animation. At your current frame (1) the environment texture will be rotated -15 degrees. <br />
+       3. While having the camera selected, press i in the scene. You will see options for keyframing.
+       Select "Location and Rotation". This will add both the X,Y,Z coordinates and rotations to your
+       animations keyframe sequence. This way, you can simply move the camera around (while locked
+       to view) and press i -> location and rotation to add as many keyframes as you like.  <br />
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+           <div class="w3-display-container" >
+             <img src="images/middle_cam.PNG" class="w3-image" style="width:30%">
+           </div>
+         </a> <!-- end link -->
+         </div>
+       4. Whenever you want to add a new keyframe (I added a new one for each second of my animation),
+       just repeat step 4. Blender will automatically smooth the movement between keyframes. Navigate to
+       the timeline editor and press t. Again, set the interpolation to linear. This way the amount
+       of time it takes to travel from keyframe to keyframe is constant, just as in the still camera
+       animation. <br />
        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
            <div class="w3-display-container" >
              <img src="images/timeline_61.PNG" class="w3-image" style="width:60%">
@@ -334,51 +343,10 @@
          </div>
        4. Navigate one second further into your animation. Since I was using 60fps, this is frame 61 (since I began
        with frame 1). <br />
-       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
-           <div class="w3-display-container" >
-             <img src="images/mapping_61.PNG" class="w3-image" style="width:30%">
-           </div>
-         </a> <!-- end link -->
-         </div>
-       5. Determine how much you want the sun to rotate every second. I chose 15 degrees per second, for
-       a total rotation of (15 degrees per second)*(15 seconds)=225 degrees. In other words, my
-       sun will rotate 225 degrees over the course of the animation. This creates a sort of time lapse
-       effect. Add this number of degrees you're rotating per second to the initial rotation value. This sum
-       becomes the new Y rotation value.  <br />
-       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
-           <div class="w3-display-container" >
-             <img src="images/mapping_901.PNG" class="w3-image" style="width:30%">
-           </div>
-         </a> <!-- end link -->
-         </div>
-       6. Repeat steps 4-5 until you reach the end of your animation. In my case this was 900 frames. You
-       should end up with a Y rotation value equal to the number of seconds in your animation times the
-       number of degrees rotated per second, plus your starting Y rotation value. You can now scrub between
-       frame 1 and your end frame to get a feel for what the sun movement will look like, and change any keyframes
-       accordingly. <br />
-       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
-           <div class="w3-display-container" >
-             <img src="images/keyframe.PNG" class="w3-image" style="width:40%">
-           </div>
-         </a> <!-- end link -->
-         </div>
-       7. Navigate to the timeline editor and click anywhere on the timeline. Press t. Then select
-       "Linear" from interpolation options. This creates a linear rate of changge between frames,
-       and makes the time lapse simulation look nicer. <br />
-       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
-           <div class="w3-display-container" >
-             <img src="images/avi.PNG" class="w3-image" style="width:30%">
-           </div>
-         </a> <!-- end link -->
-         </div>
-       8. Navigate to the project Output Properties. Change your output file format to AVI JPEG,
-       or another video format. Also choose a file path where your render will end up.
-       This is also where you should make sure the number of frames
-       you're outputting is the same as you keyframed for. You can also toggle quality settings
-       for faster test renders if you'd like. <br />
-       9. Now you wait! This render might take a while depending on how many frames you chose.
-       Hopefully you'll be lucky and end up with something awesome on your first render, it took
-       me many attempt to get the render I wanted.
+       5. Once you've keyframed everything you want, you're done! Blender makes dynamic camera animations
+       pretty straightforward, since we're just dipping our toes in what's possible with Blender.
+       More advanced dynamic scenes are certainly possible, and would be great extentions of this
+       project for the future. <br />
 
 
     </p>
