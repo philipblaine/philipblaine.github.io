@@ -26,6 +26,8 @@
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Blender Tutorial</h3>
     <p>Here is a detailed list of steps I took to produce three difference map scenes from Blender, one still and two animations.
+      These tutorials assume a basic knowledge of Blender and that you know how to obtain/process DEM files
+      for use in Blender.
       References are listed at the end.
     </p>
   </div>
@@ -187,6 +189,78 @@
 
     </p>
   </div>
+
+  <div class="w3-container w3-padding-32" id="animations">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Comparison Render</h3>
+    <p>First I'll describe my process for comparing Mauna Kea to Mount Everest. It's pretty
+      simple, consisting of creating two textured planes and overlaying them on one another. <br />
+
+      <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+          <div class="w3-display-container" >
+            <img src="images/comparison.jpg" class="w3-image" style="width:60%">
+          </div>
+        </a> <!-- end link -->
+        </div>
+
+        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-display-container" >
+              <img src="images/scene.PNG" class="w3-image" style="width:30%">
+            </div>
+          </a> <!-- end link -->
+          </div>
+
+       1. Repeat steps 3-6 from above to get your first landmass into Blender. Ideally this will be its
+       own project. Navigate to the World Properties and change the color to something neutral and solid.
+       White works well for this comparison render. <br />
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+           <div class="w3-display-container" >
+             <img src="images/mk_material.PNG" class="w3-image" style="width:30%">
+           </div>
+         </a> <!-- end link -->
+         </div>
+
+      2. Navigate to the Material Properties of your first landmass. Change the color to black.
+      you might return to this menu later to change surface settings once the two landmasses
+      are overlayed.  <br />
+      <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+          <div class="w3-display-container" >
+            <img src="images/mk_only.PNG" class="w3-image" style="width:30%">
+          </div>
+        </a> <!-- end link -->
+        </div>
+        My scene looks something like this now. One landmass and a white background.  <br />
+
+        <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+            <div class="w3-display-container" >
+              <img src="images/mk_and_everest.PNG" class="w3-image" style="width:30%">
+            </div>
+          </a> <!-- end link -->
+          </div>
+
+       3. Repeat steps 3-6 from the landmass section to generate a second landmass for the scene.
+       I used DEM data from Mount Everest because my purpose in creating this comparison was to
+       see Mauna Kea and Mount Everest side by side. In Material Properties change the color
+       of your second landmass to something distinctive. I chose dark red. Navigate to the
+       Object Properties page and move both landmasses to the origin. They should overlap by
+       default.  <br />
+       <div class="w3-col l12 m12 w3-margin-bottom w3-margin-top" > <!--see https://www.w3schools.com/w3css/w3css_grid.asp -->
+           <div class="w3-display-container" >
+             <img src="images/cam_settings.PNG" class="w3-image" style="width:30%">
+           </div>
+         </a> <!-- end link -->
+         </div>
+       4. Move your camera around until you find a good angle to view both landmasses. I found
+       these settings to work for me. Change the surface properties of each landmass until you like
+       the contrast between them. While useful for comparing mountain height, for example,
+       this technique could also be useful for comparing any sort of landform or other
+       geographic phenomena.  <br />
+       5. Render your image! Save it somewhere handy and tweak settings until you like it. <br />
+
+
+    </p>
+  </div>
+
+
   <div class="w3-container w3-padding-32" id="animations">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Static Camera Animation</h3>
     <p>Here is my explanation of how I created the still-scene animation of sun and ocean movement
